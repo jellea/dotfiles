@@ -6,3 +6,4 @@ set guifont=MesloLGSDZ:h11
 set guioptions-=T
 set undofile
 set guioptions-=rL
+autocmd BufLeave,FocusLost * silent! wall
