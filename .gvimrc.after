@@ -1,4 +1,5 @@
-color mustang
+color solarized
+call togglebg#map("<F5>")
 set fuoptions=maxhorz,maxvert
 set cursorcolumn
 set colorcolumn=80
@@ -7,3 +8,4 @@ set guioptions-=T
 set undofile
 set guioptions-=rL
 autocmd BufLeave,FocusLost * silent! wall
+set showbreak=↪
