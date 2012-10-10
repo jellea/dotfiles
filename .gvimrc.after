@@ -1,9 +1,9 @@
-color solarized
+color github
 call togglebg#map("<F5>")
 set fuoptions=maxhorz,maxvert
 set cursorcolumn
 set colorcolumn=80
-set guifont=MesloLGSDZ:h11
+set guifont=Bitstream\ Vera\ Sans\ Mono:h13
 set guioptions-=T
 set undofile
 set guioptions-=rL
