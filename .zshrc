@@ -29,7 +29,7 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git cloudapp osx brew python mercurial soca github)
+plugins=(git heroku cloudapp osx brew python mercurial soca github)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -37,3 +37,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/MacGPG2/bin
 export PYTHONPATH=/Users/jelle/Dev
 alias tmux="TERM=screen-256color-bce tmux"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
