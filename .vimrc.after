@@ -1,7 +1,8 @@
 set showbreak=↪
 
 " Solarized
-set background=dark
-colorscheme solarized
-let g:solarized_termcolors=256
+colorscheme github
 call togglebg#map("<F5>")
+
+" http://stackoverflow.com/questions/830645/changing-background-color-in-vim-at-a-certain-column
+match ErrorMsg '\%>80v.\+'
