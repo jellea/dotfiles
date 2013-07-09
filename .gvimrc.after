@@ -7,5 +7,7 @@ set guifont=Bitstream\ Vera\ Sans\ Mono:h13
 set guioptions-=T
 set undofile
 set guioptions-=rL
+
+" If macvim is on the background safe the current file
 autocmd BufLeave,FocusLost * silent! wall
 set showbreak=↪

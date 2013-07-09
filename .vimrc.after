@@ -1,5 +1,8 @@
 set showbreak=↪
 
+au BufRead,BufNewFile *.pde set filetype=arduino
+au BufRead,BufNewFile *.ino set filetype=arduino
+
 " Solarized
 colorscheme github
 call togglebg#map("<F5>")
