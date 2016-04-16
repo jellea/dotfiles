@@ -27,7 +27,7 @@ alias gd 'git diff'
 alias gcl 'git clone'
 alias show-stashes 'bass git stash list | awk -F: \'{ print "\n\n\n\n"; print $0; print "\n\n"; system("git stash show -p " $1); }\''
 
-set -g -x EDITOR 'vim'
+set -g -x EDITOR 'nvim'
 
 alias pcat 'pygmentize -f terminal256 -O -g'
 
@@ -55,6 +55,8 @@ set __fish_git_prompt_char_stashstate '↩'
 set __fish_git_prompt_char_upstream_ahead '+'
 set __fish_git_prompt_char_upstream_behind '-'
 
+# Init Z
+. ~/.config/fish/z-fish/z.fish
 
 function fish_prompt
   set last_status $status
@@ -72,6 +74,8 @@ set -xU LEIN_FAST_TRAMPOLINE 'y'
 alias cljsbuild "lein trampoline cljsbuild"
 
 alias npm-init "bass source ~/.nvm/nvm.sh ';' nvm use iojs-v3"
+
+alias vim 'nvim'
 
 /* AnyBar */
 alias bred "echo -n \"red\" | nc -4u -w0 localhost 1738"
